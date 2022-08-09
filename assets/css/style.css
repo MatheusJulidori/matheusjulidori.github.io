@@ -17,7 +17,8 @@ body {
 }
 
 .foto-principal {
-    width: 200px;
+    width: 250px;
+    height: 250px;
     border: 2px solid white;
     border-radius: 50%;
     box-shadow: 0px 0px 10px #959595;
@@ -60,7 +61,7 @@ p {
 }
 
 .social-icons {
-    width: 20px;
+    width: 30px;
 }
 
 .github {
