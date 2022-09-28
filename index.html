@@ -1,105 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Matheus Julidori - Fullstack JS Web Developer</title>
+		<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;800&family=Gothic+A1:wght@400;700;900&family=Inter+Tight:wght@400;700&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<main id="intro" class="box-white">
+			<div id="photo_resume">
+				<div id="photo">
+					<img
+						class="profile_pic"
+						src="assets/img/profile_pic.jpeg"
+						alt="Matheus Julidori"
+					/>
+				</div>
+				<div id="download-button">
+					<button id="download_cv"><i class="fa fa-download icon_download"></i>Download CV</button>
+				</div>
+			</div>
+			<div id="infos">
+				<h1 id="main_title">HI, I'M <span>MATHEUS JULIDORI</span></h1>
+				<h2>Fullstack JS Web Developer</h2>
+				<p>
+					Hi! I'm Matheus Julidori, a passionate Web Developer from Brazil who lives in Santa Rita do Sapucaí. I'm graduating in Software Engineering at Inatel and have skills to write clean and testable code, following web-development standards and best practices. I'm also able to implement web applications with React and NodeJS, explore open-source solutions to solve problems and develop RESTful web services. 
+				</p>
+				<h2 class="table_title">About me</h2>
+				<div class="double_side_table">
+					<div id="table_left">
+						<table>
+							<tr>
+								<td>Age</td>
+								<td>22</td>
+							</tr>
+							<tr>
+								<td>LinkedIn</td>
+								<td><a
+									href="https://www.linkedin.com/in/matheusjulidori/"
+									target="_blank"
+									>Matheus Julidori</a></td>
+								
+							</tr>
+							<tr>
+								<td>E-mail</td>
+								<td><a href="mailto:matheus_julidori@yahoo.com.br"
+									target="_blank"
+									>matheus_julidori@yahoo.com.br</a></td>
+								
+							</tr>
+						</table>
+					</div>
+					<div id="table_right">
+						<table>
+							<tr>
+								<td>Phone</td>
+								<td>+5535988023329</td>
+							</tr>
+							<tr>
+								<td>Address</td>
+								<td>6, Elias Rezeck</td>
+							</tr>
+							<tr>
+								<td>Nationality</td>
+								<td>Brazilian</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</main>
+		<h1 class="outside-title">Skills</h1>
+		<section id="skills">
+			<div id="pro-skills" class="box-white">
+				<h2 class="box-title">Professional Skills</h2>
+				<div class="skill-bar">
+					<div class="skill-title">
+						<h2>HTML & CSS</h2>
+						<h2 class="right-align">90%</h2>
+					</div>
+					<div class="skill-progress">
+						<div class="skill-progress-bar" style="width: 90%;"></div>
+					</div>
+				</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matheus Julidori</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BLJHH29HW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+				<div class="skill-bar">
+					<div class="skill-title">
+						<h2>JavaScript</h2>
+						<h2 class="right-align">85%</h2>
+					</div>
+					<div class="skill-progress">
+						<div class="skill-progress-bar" style="width: 85%;"></div>
+					</div>
+				</div>
 
-      gtag('config', 'G-2BLJHH29HW');
-    </script>
-</head>
+				<div class="skill-bar">
+					<div class="skill-title">
+						<h2>NodeJS</h2>
+						<h2 class="right-align">70%</h2>
+					</div>
+					<div class="skill-progress">
+						<div class="skill-progress-bar" style="width: 70%;"></div>
+					</div>
+				</div>
 
-<body>
-    <div class="container">
-        <div class="profile">
-            <img src="./assets/img/matheus.png" class="foto-principal" alt="Foto:Matheus Julidori">
-            <h1>Matheus Julidori</h2>
-                <h2>Web Developer</h2>
-                <a href="http://www.linkedin.com/in/matheusjulidori" target="_blank" class="social-links">
-                    <img src="./assets/img/logo-linkedin.png" alt="Linkedin" class="social-icons">
-                </a>
-                <a href="http://www.github.com/matheusjulidori" target="_blank" class="social-links">
-                    <img src="./assets/img/logo-github.png" alt="github" class="social-icons github">
-                </a>
-                <a href="http://www.instagram.com/matheusjulidori" target="_blank" class="social-links">
-                    <img src="./assets/img/logo-instagram.png" alt="Instagram" class="social-icons">
-                </a>
-        </div>
-        <div class="conteudo">
-            <p>
-                Hi! I'm <strong>Matheus Julidori</strong>, a passionate <strong>Web Developer</strong> from <strong>Brazil</strong> who lives in Santa Rita do Sapucaí. I'm graduating in Software Engineering at Inatel and have skills to write clean and
-                testable code, following web-development standards and best practices. I'm also able to implement web applications with React and NodeJS, explore open-source solutions to solve problems, develop RESTful web services.
-            </p>
+				<div class="skill-bar">
+					<div class="skill-title">
+						<h2>ReactJS</h2>
+						<h2 class="right-align">50%</h2>
+					</div>
+					<div class="skill-progress">
+						<div class="skill-progress-bar" style="width: 50%;"></div>
+					</div>
+				</div>
 
-            <h3>Main Skills</h3>
-            <ul>
-                <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>React.js</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
+				<div class="skill-bar">
+					<div class="skill-title">
+						<h2>Git & GitHub</h2>
+						<h2 class="right-align">65%</h2>
+					</div>
+					<div class="skill-progress">
+						<div class="skill-progress-bar" style="width: 65%;"></div>
+					</div>
+				</div>
+			</div>
+			<div id="other-skills" class="box-white">
+				<h2 class="box-title">Language Skills</h2>
+				<div class="skill-bar">
+					<div class="skill-title">
+						<h2>Portuguese</h2>
+						<h2 class="right-align">Mother Tongue</h2>
+					</div>
+					<div class="skill-progress">
+						<div class="skill-progress-bar" style="width: 100%;"></div>
+					</div>
+				</div>
+				<div class="skill-bar">
+					<div class="skill-title">
+						<h2>English</h2>
+						<h2 class="right-align">Fluent</h2>
+					</div>
+					<div class="skill-progress">
+						<div class="skill-progress-bar" style="width: 95%;"></div>
+					</div>
+				</div>
+				<div class="skill-bar">
+					<div class="skill-title">
+						<h2>German</h2>
+						<h2 class="right-align">Advanced</h2>
+					</div>
+					<div class="skill-progress">
+						<div class="skill-progress-bar" style="width: 85%;"></div>
+					</div>
+				</div>
+				<div class="skill-bar">
+					<div class="skill-title">
+						<h2>Spanish</h2>
+						<h2 class="right-align">Intermediate</h2>
+					</div>
+					<div class="skill-progress">
+						<div class="skill-progress-bar" style="width: 80%;"></div>
+					</div>
+				</div>
+				<div class="skill-bar">
+					<div class="skill-title">
+						<h2>Italian</h2>
+						<h2 class="right-align">Beginner</h2>
+					</div>
+					<div class="skill-progress">
+						<div class="skill-progress-bar" style="width: 40%;"></div>
+					</div>
+				</div>
+			</div>
 
-            <h3>I can speak</h3>
-            <ul>
-                <li>English - Fluent</li>
-                <li>Portuguese - Mothertongue</li>
-                <li>German - Advanced</li>
-            </ul>
-
-            <h3>Work experience</h3>
-            <ul class="jobs-list">
-                <li>
-                    <h4>CP2eJr</h4>
-                    <h5>Fullstack MERN developer</h5>
-                    <p>
-                        Development of web systems and landing pages using ReactJS,NodeJS, Express and MongoDB
-                    </p>
-                </li>
-                <li>
-                    <h4>Electroneum</h4>
-                    <h5>Blockchain developer</h5>
-                    <p>
-                        Development of web system using Python and Django framework
-                    </p>
-                </li>
-                <li>
-                    <h4>Huawei</h4>
-                    <h5>Python software developer</h5>
-                    <p>
-                        Development of web system using Python and Django framework
-                    </p>
-                </li>
-                <li>
-                    <h4>RelpiMi</h4>
-                    <h5>Web and mobile developer</h5>
-                    <p>
-                        Frontend developer with Ionic Angular framework
-                    </p>
-                </li>
-                <li>
-                    <h4>UmiTerm</h4>
-                    <h5>Web developer</h5>
-                    <p>
-                        Front and backend developer with NodeJS and VueJS frameworks
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <footer>
-        Developed by Matheus Julidori
-    </footer>
-</body>
-
+		</section>
+		<script src="./js/script.js"></script>
+	</body>
 </html>

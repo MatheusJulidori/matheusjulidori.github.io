@@ -1,0 +1,296 @@
+/*General CSS rules*/
+@import url(reset.css);
+html{
+    background-color: #efefef;
+    font-family: 'Comic Neue', cursive;
+}
+
+div{
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+h2{
+    font-family: 'Inter Tight', sans-serif;
+}
+
+a{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+/*Common classes*/
+
+.box-white{
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 2px 2px #DEDEDE; 
+    box-shadow: 0px 0px 2px 2px #DEDEDE;
+    border: 2px solid #efefef;
+}
+
+/*Inter Sections itens*/
+
+.outside-title{
+    color: #0284ce;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin: 8% 0;
+}
+
+@media (min-width:1025px) { 
+    .outside-title{
+        font-size: 2rem;
+        margin: 5% 0;
+    }
+}
+
+/*Main Section*/
+
+main{
+    margin: 5% auto;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+main #photo{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+main .profile_pic{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 2px solid #efefef;
+    -webkit-box-shadow: 0px 0px 2px 2px #DEDEDE; 
+    box-shadow: 0px 0px 2px 2px #DEDEDE;
+}
+
+main #download-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #download_cv{
+    font-family: 'Inter Tight', sans-serif;
+    width: 80%;
+    height:50px;
+    background-color: white;
+    border: 2px solid #efefef;
+    -webkit-box-shadow: 0px 0px 2px 2px #DEDEDE; 
+    box-shadow: 0px 0px 2px 2px #DEDEDE;
+    transition: 0.3s;
+}
+
+main #download_cv:hover{
+    -webkit-box-shadow: 0px 0px 4px 3px #bebcbc; 
+    box-shadow: 0px 0px 4px 3px #bebcbc;
+    cursor: pointer;
+}
+
+main .icon_download{
+    margin-right: 10px;
+}
+
+main #main_title{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 900;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    width: 90%;
+}
+
+main h2{
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: gray;
+}
+
+#main_title span{
+    color: #0284ce;
+}
+
+main p{
+    text-align: justify;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 16px;
+}
+
+main .table_title{
+    color: black;
+    font-style: normal;
+}
+
+main table{
+    width: 95%;
+    margin: 0 auto;
+}
+
+main tr :first-child{
+    color: rgb(99, 99, 99);
+    font-weight: 600;
+    text-align: left;
+}
+
+main tr :last-child{
+    text-align: right;
+}
+
+.double_side_table{
+    margin-bottom: 5%;
+}
+
+@media (min-width:600px) {
+    main{
+        width: 80%;
+    }
+    .double_side_table{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #photo_resume{
+        width: 100%;
+    }
+
+    main p{
+        font-size: 18px;
+    }
+
+    #table_left,#table_right{
+        flex: 1 1 0;
+    }
+}
+
+@media (min-width:1025px) { 
+   main{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+   #photo_resume, #infos{
+    margin: 2% 4%;
+   }
+   main #photo{
+    max-width: 100%;
+    margin: 0 auto;
+}
+   main #main_title{
+    font-size: 2.3rem;
+   }
+
+   main h2{
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: gray;
+}
+
+   .double_side_table{
+    margin-bottom: 0;
+   }
+
+   p,tr{
+    font-size: 20px;
+   }
+}
+
+/*Skills sections*/
+
+#skills{
+    margin: 5% auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#pro-skills,#other-skills{
+    width: 90%;
+    margin-bottom: 10%;
+}
+
+.box-title{
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 900;
+    margin:0 auto;
+    z-index: 100;
+    transform: translate(0, -1.2rem);
+    width: 70%;
+    background-color: #0284ce;
+    padding: 0.7rem 0;
+    color: white;
+}
+
+.skill-bar{
+    width:80%;
+    margin: 5% auto;
+}
+
+.skill-title{
+    display: flex;
+}
+
+.skill-bar h2{
+    margin: 0;  
+    font-size: 16px;
+    color: rgb(99, 99, 99);
+    width: 100%;
+}
+
+.right-align{
+    text-align: right;
+}
+
+.skill-progress{
+    background-color: rgb(34, 34, 34);
+    height:13px;
+    border-radius: 1px;
+}
+
+.skill-progress-bar{
+    background-color: #0284ce;
+    height: 13px;
+    margin-left: 0;
+}
+
+@media (min-width:1025px) { 
+    #skills{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #pro-skills,#other-skills{
+        width: 40%;
+    }
+    .skill-bar{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
