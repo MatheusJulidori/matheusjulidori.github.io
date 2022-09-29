@@ -6,11 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Matheus Julidori - Fullstack JS Web Developer</title>
 		<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;800&family=Gothic+A1:wght@400;700;900&family=Inter+Tight:wght@400;700&display=swap" rel="stylesheet"> 
+		
+		<!-- Slider -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+		<!-- Custom Stylesheets -->
+		<link rel="stylesheet" href="css/style.css" />
+
 	</head>
 	<body>
 		<main id="intro" class="box-white">
@@ -180,6 +190,57 @@
 			</div>
 
 		</section>
+		<h1 class="outside-title">Portfolio</h1>
+		<section id="portfolio">
+			<div id="slider-container" class="box-white">
+				<!-- Slider main container -->
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<h1 class="slide-title">Sliders and contact forms</h1>
+							<div class="slide-image-container">
+								<img class="slide-image"src="./assets/img/mogno_slider_contato.png" alt="Portfolio 1">
+							</div>
+							<p class="slide-text">Sliders and contact forms done for Mogno Odontologia</p>
+						</div>
+						<div class="swiper-slide">
+							<h1 class="slide-title">Maps and contact infos</h1>
+							<div class="slide-image-container">
+								<img class="slide-image"src="./assets/img/mudancas_slide_contact_info.png" alt="Portoflio 2">
+							</div>
+							<p class="slide-text">Contact information section done for Mudanças Divinopolitana</p>
+						</div>
+						<div class="swiper-slide">
+							<h1 class="slide-title">FAQ Sections</h1>
+							<div class="slide-image-container">
+								<img class="slide-image"src="./assets/img/unifei_slider_faq.png" alt="Portfolio 3">
+							</div>
+							<p class="slide-text">FAQ section done for Junior enterprise Unifei JR website</p>
+						</div>
+						<div class="swiper-slide">
+							<h1 class="slide-title">RESTFull APIs</h1>
+							<div class="slide-image-container">
+								<img class="slide-image"src="./assets/img/API.png" alt="Portfolio 3">
+							</div>
+							<p class="slide-text">RESTFull crypted API end points developed for an eCommerce shop</p>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Swiper Scripts -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+		<!-- Custom Scripts -->
 		<script src="./js/script.js"></script>
+
+
 	</body>
 </html>
